@@ -25,7 +25,7 @@
           <stringProp name="TestPlan.comments">Before running the suite, replace &apos;service-name&apos; the name/url of the service to test. $env is set to the name of th environment the test is running in.</stringProp>
           <stringProp name="HTTPSampler.domain">phi-etl-fera-backend.${__P(env)}.cdp-int.defra.cloud</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.path">/search/plant</stringProp>
+          <stringProp name="HTTPSampler.path">/search/plants</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -34,9 +34,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">          hostRef:26901,
-          country: New Zealand,
-          serviceFormat:Parts of a plant</stringProp>
+                <stringProp name="Argument.value">  seach: &apos;acacia&apos;</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
