@@ -21,6 +21,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
+
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PHI - Search API Request">
           <stringProp name="TestPlan.comments">Before running the suite, replace &apos;service-name&apos; the name/url of the service to test. $env is set to the name of th environment the test is running in.</stringProp>
           <stringProp name="HTTPSampler.domain">phi-etl-fera-backend.${__P(env)}.cdp-int.defra.cloud</stringProp>
