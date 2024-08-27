@@ -21,9 +21,10 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PHI - Search API Request" enabled="true">
+
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PHI - Search API Request">
           <stringProp name="TestPlan.comments">Before running the suite, replace &apos;service-name&apos; the name/url of the service to test. $env is set to the name of th environment the test is running in.</stringProp>
-          <stringProp name="HTTPSampler.domain">phi-etl-fera-backend.perf-test.cdp-int.defra.cloud</stringProp>
+          <stringProp name="HTTPSampler.domain">phi-etl-fera-backend.${__P(env)}.cdp-int.defra.cloud</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
           <stringProp name="HTTPSampler.path">/search/plants</stringProp>
@@ -66,7 +67,7 @@
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
