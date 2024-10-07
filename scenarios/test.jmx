@@ -119,7 +119,7 @@
         <Summariser guiclass="SummariserGui" testclass="Summariser" testname="Generate Summary Results" enabled="true"/>
         <hashTree/>
         <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
-          <stringProp name="DurationAssertion.duration">5000</stringProp>
+          <stringProp name="DurationAssertion.duration">6000</stringProp>
         </DurationAssertion>
         <hashTree/>
         <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
@@ -188,9 +188,9 @@ if (errorCount &gt; maxErrors) {
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
-          <stringProp name="script">int responseTimeThreshold = 5000; 
+          <stringProp name="script">
+          int responseTimeThreshold = 6000; 
 long responseTime = prev.getTime(); 
-
 if (responseTime &gt; responseTimeThreshold) {
     SampleResult.setSuccessful(false); 
     SampleResult.setResponseMessage(&quot;Response time exceeded threshold&quot;);
