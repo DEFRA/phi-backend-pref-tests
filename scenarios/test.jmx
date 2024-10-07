@@ -188,13 +188,7 @@ if (errorCount &gt; maxErrors) {
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
-          <!-- <stringProp name="script">int responseTimeThreshold = 6000; 
-long responseTime = prev.getTime(); 
-if (responseTime &gt; responseTimeThreshold) {
-    SampleResult.setSuccessful(false); 
-    SampleResult.setResponseMessage(&quot;Response time exceeded threshold&quot;);
-}
-</stringProp> -->
+          <stringProp name="script"></stringProp>
           <stringProp name="scriptLanguage">javascript</stringProp>
         </JSR223Sampler>
         <hashTree/>
